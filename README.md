@@ -2,7 +2,9 @@
 
 A sourced research site answering whether GHO is profitable for the Aave DAO under a specifically defined borrow-interest-only income test.
 
-**Observation date: 2026-09-05. This is a fixed research snapshot, not an automatically updated feed.**
+**Live dashboard with automatic refresh. The original research audit remains dated 2026-09-05.**
+
+The page fetches public TokenLogic financials and quarterly statements, plus current Aave rates, on load, every two minutes while visible, when returning to the tab and on manual refresh. Each feed has its own observation time, source link and failure state. The complete net-profitability conclusion remains unverified because fetching current data does not supply the missing cost reconciliation.
 
 ## Finding
 
@@ -18,7 +20,9 @@ Important limitations:
 - The GHO dashboard and general DAO financial statements have unreconciled scope and accounting differences. Neither was silently used to correct the other.
 - The requester-supplied circulation anchor differs from the dashboard's header scope. No dashboard margin is multiplied by global circulating supply.
 
-The [official Core reserve page](https://app.aave.com/reserve-overview/?underlyingAsset=0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f&marketName=proto_mainnet_v3) displayed **4.08% borrow APY** and **74.37% borrow-cap usage**; the [Aave markets savings banner](https://app.aave.com/markets/) displayed **4.50% savings APY**, on 2026-09-05. The derived **−0.42 percentage-point** matched-unit spread is not aggregate DAO profitability.
+The current-rates section fetches the official [Aave API](https://api.v3.aave.com/graphql). Integration on 2026-09-05 corrected an earlier unit error: **4.50% is the sGHO target APR**, equivalent to approximately **4.59% display APY** under [Aave’s monthly-compounding convention](https://github.com/aave/interface/blob/main/src/utils/utils.ts#L143). Against the observed Core borrow APY of approximately **4.08%**, that yields a **−0.51 percentage-point** yield comparison. It is not aggregate DAO profitability. The live display calculates the comparison again from each response.
+
+The “Balance excluding GSM” diagnostic retains facilitator deposit yield; it does **not** isolate borrow-only income. The dated audit labels have been corrected accordingly.
 
 ## Evidence
 
@@ -43,13 +47,25 @@ Validation:
 ```sh
 pnpm exec tsc --noEmit
 pnpm lint
-node --test scripts/research.test.mjs
+node --test scripts/*.test.mjs
 pnpm build
 ```
 
 Lint checks project-authored code; the unmodified starter UI catalog and its generated mobile hook are excluded from lint because the scaffold has baseline lint errors. TypeScript checks include those dependencies. No browser visual QA was requested or performed.
 
 The hosting configuration is `.openai/hosting.json`. Sites owns production hosting. Credentials are supplied transiently during publishing and are never stored in this repository.
+
+## Live data implementation
+
+- `GET /api/live` runs server-side with three independent feeds: financial metrics, quarterly statements, and market rates. It returns source URLs, provider timestamps where supplied, fetch timestamps, status and nullable values.
+- `lib/live/tokenlogic.ts` validates exact metric keys and statement categories. It rejects missing/duplicate metrics, inconsistent accounting totals and malformed numbers. Missing quarter entries remain unreported, including absent whole quarters. Previously reported quarters are re-fetched too.
+- `lib/live/markets.ts` checks verified pool and token addresses on Ethereum and Monad. If the official API fails, verified public Ethereum RPC reads supply Core and sGHO at one pinned block; missing markets are explicitly excluded. It distinguishes APR, display APY, cap usage and utilization. GHO token units are not silently converted to USD.
+- `lib/live/cache.ts` deduplicates concurrent loads per worker, reuses successful results for 60 seconds, and retains a last successful observation for at most 24 hours on a source outage. Cloudflare Cache API provides best-effort persistence, with in-memory storage in local development. No stale response receives a new fetch timestamp. Browser-retained responses expire too.
+- The financial provider’s reporting timestamp is checked separately: over 36 hours old (or more than 5 minutes in the future) is flagged stale. Other APIs do not publish per-row reporting timestamps; the page explicitly labels their fetch time as the observation time.
+- `lib/live/polling.ts` pauses polling in background tabs and prevents overlapping requests. Refresh failures show errors and unavailable states; the static audit is never substituted as live data.
+- Public anonymous upstream requests use fixed endpoints, timeouts and response validation. No API keys or secrets are needed. The public route accepts no proxy URL or credential input.
+
+See `research/live-sources.md` for the request contracts and their limitations. These third-party public API contracts can change; incompatible payloads produce stale/unavailable states rather than fabricated results. Data is fetched on demand, not by a scheduled background job.
 
 ## Updating the analysis
 

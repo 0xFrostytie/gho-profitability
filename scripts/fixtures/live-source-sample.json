@@ -1,0 +1,2376 @@
+{
+  "observedAt": "2026-09-05T17:43:13.729555+00:00",
+  "sources": [
+    "https://aave.tokenlogic.xyz/api/data/table",
+    "https://aave.tokenlogic.xyz/api/data/financial-statements?granularity=quarterly",
+    "https://api.v3.aave.com/graphql"
+  ],
+  "revenue": {
+    "columns": [
+      "metric_key",
+      "value",
+      "change",
+      "change_pct",
+      "change_period",
+      "last_updated"
+    ],
+    "rows": [
+      {
+        "metric_key": "annualised_revenue_30_day_average",
+        "value": 9323614.641791888,
+        "change": 435503.50018181093,
+        "change_pct": 0.048998430965043006,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:19.324762000Z"
+        }
+      },
+      {
+        "metric_key": "gsm_annualised_90_day_revenue",
+        "value": 3222619.2230228963,
+        "change": 6514717.598067673,
+        "change_pct": -0.5053324761185726,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:19.324762000Z"
+        }
+      },
+      {
+        "metric_key": "annualised_90_day_net_revenue",
+        "value": 2221490.901001785,
+        "change": 7706374.68955841,
+        "change_pct": -0.7117333388925733,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:19.324762000Z"
+        }
+      },
+      {
+        "metric_key": "annualised_revenue_90_day_average",
+        "value": 8969872.653400987,
+        "change": 11937416.743212527,
+        "change_pct": -0.24859181459831745,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:19.324762000Z"
+        }
+      }
+    ],
+    "meta": {
+      "totalCount": 4
+    }
+  },
+  "expenses": {
+    "columns": [
+      "metric_key",
+      "value",
+      "change",
+      "change_pct",
+      "change_period",
+      "last_updated"
+    ],
+    "rows": [
+      {
+        "metric_key": "sgho_gho_in_sgho",
+        "value": 162320388.79234305,
+        "change": null,
+        "change_pct": null,
+        "change_period": null,
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_vault_gho_balance",
+        "value": 162360799.98739797,
+        "change": null,
+        "change_pct": null,
+        "change_period": null,
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_cash_sent_to_date",
+        "value": 1784000,
+        "change": null,
+        "change_pct": null,
+        "change_period": null,
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_annualised_savings_rate_cost",
+        "value": 7304417.495655437,
+        "change": null,
+        "change_pct": null,
+        "change_period": null,
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_savings_rate",
+        "value": 0.045,
+        "change": null,
+        "change_pct": null,
+        "change_period": null,
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "umbrella_expenses_last_30d",
+        "value": 0,
+        "change": 0,
+        "change_pct": null,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "umbrella_annualised_expenses_30d",
+        "value": 0,
+        "change": 0,
+        "change_pct": null,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_cex_expenses_last_30d",
+        "value": 123514.6,
+        "change": 123514.6,
+        "change_pct": null,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_cex_annualised_expenses_30d",
+        "value": 1502760.9666666666,
+        "change": 1502760.9666666666,
+        "change_pct": null,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_cex_annualised_expenses_90d",
+        "value": 500920.3222222222,
+        "change": 500920.3222222222,
+        "change_pct": null,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_liquidity_expenses_last_30d",
+        "value": 0,
+        "change": -2090.168471024,
+        "change_pct": -1,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_liquidity_annualised_expenses_30d",
+        "value": 0,
+        "change": -25430.383064125333,
+        "change_pct": -1,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "umbrella_annualised_expenses_90d",
+        "value": 16507.586638983747,
+        "change": -1469175.2108695523,
+        "change_pct": -0.9888888888888888,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_liquidity_annualised_expenses_90d",
+        "value": 24679.740034192902,
+        "change": -1532658.6083775428,
+        "change_pct": -0.9841526152236842,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "umbrella_expenses_ytd",
+        "value": 643117.4849488992,
+        "change": -3024601.938335118,
+        "change_pct": -0.8246546666393958,
+        "change_period": "yoy",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_liquidity_expenses_ytd",
+        "value": 974887.9166757567,
+        "change": -4566840.94124853,
+        "change_pct": -0.8240823501709696,
+        "change_period": "yoy",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_cex_expenses_ytd",
+        "value": 168989.78,
+        "change": -431010.22,
+        "change_pct": -0.7183503666666666,
+        "change_period": "yoy",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "total_expenses_ytd",
+        "value": 3610246.0063133724,
+        "change": -6229741.269865232,
+        "change_pct": -0.6331046062373137,
+        "change_period": "yoy",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_expenses_last_30d",
+        "value": 453431.9026097383,
+        "change": -53072.63880390045,
+        "change_pct": -0.1047821578376698,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_annualised_expenses_30d",
+        "value": 5516754.815085149,
+        "change": -645717.1054474553,
+        "change_pct": -0.10478215783766977,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "umbrella_expenses_to_date",
+        "value": 8907534.79961291,
+        "change": 0,
+        "change_pct": 0,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_liquidity_expenses_to_date",
+        "value": 12794040.306293113,
+        "change": 0,
+        "change_pct": 0,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "liquidity_expenses_to_date",
+        "value": 12794040.306293113,
+        "change": 0,
+        "change_pct": 0,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "total_expenses_to_date",
+        "value": 25155551.47214193,
+        "change": 583935.5274078175,
+        "change_pct": 0.023764636754912305,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "gho_cex_expenses_to_date",
+        "value": 1361418.8499999999,
+        "change": 123514.59999999986,
+        "change_pct": 0.09977718389770442,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "cex_expenses_to_date",
+        "value": 1361418.8499999999,
+        "change": 123514.59999999986,
+        "change_pct": 0.09977718389770442,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "total_expenses_last_30d",
+        "value": 583935.527407804,
+        "change": 69199.95554023614,
+        "change_pct": 0.1344378731960651,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "annualised_expenses",
+        "value": 7104548.916794949,
+        "change": 841932.792406207,
+        "change_pct": 0.13443787319606518,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_expenses_to_date",
+        "value": 1862416.0910088245,
+        "change": 453431.9026097383,
+        "change_pct": 0.3218147558667326,
+        "change_period": "30d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "annualised_expenses_90d",
+        "value": 6748381.752399203,
+        "change": 2517339.6987450877,
+        "change_pct": 0.5949691983257414,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_annualised_expenses_90d",
+        "value": 6153025.118225423,
+        "change": 4965004.210491572,
+        "change_pct": 4.179222922904876,
+        "change_period": "90d",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      },
+      {
+        "metric_key": "sgho_expenses_ytd",
+        "value": 1810120.937907766,
+        "change": 1779581.942937503,
+        "change_pct": 58.27244625012538,
+        "change_period": "yoy",
+        "last_updated": {
+          "value": "2026-09-05T00:15:17.144924000Z"
+        }
+      }
+    ],
+    "meta": {
+      "totalCount": 32
+    }
+  },
+  "quarters": {
+    "rows": [
+      {
+        "block_period": {
+          "value": "2023-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 16864.984786818066
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 7855.902777777825
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Grants DAO Unclaimed",
+        "value_usd": 245221.7
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 40740.74074074073
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 25012.7853881279
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Gauntlet Unclaimed",
+        "value_usd": 8672.450532724528
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "HKUST Unclaimed",
+        "value_usd": 14833.33333333333
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 13444.444444444447
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Keyrock Unclaimed",
+        "value_usd": 3480.393518518517
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LBS Blockchain Unclaimed",
+        "value_usd": 5618.194444444443
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Michigan Blockchain Unclaimed",
+        "value_usd": 2585.972222222221
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 5626.898148148147
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "TokenLogic Unclaimed",
+        "value_usd": 11008.21759259259
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -2135484
+      },
+      {
+        "block_period": {
+          "value": "2023-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 73821.84738698287
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 18093.75000000014
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Grants DAO Unclaimed",
+        "value_usd": 372976.38608119
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Arana Unclaimed",
+        "value_usd": 5499.999999999999
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Areta Unclaimed",
+        "value_usd": 1339.2592592592594
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Bored Ghosts Developing Unclaimed",
+        "value_usd": 3555.5555555555557
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 82769.03292181078
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 1798.7823439880085
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 1292.2916666666663
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Gauntlet Unclaimed",
+        "value_usd": 0
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "HKUST Unclaimed",
+        "value_usd": 15166.666666666664
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 5477.932098765434
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Keyrock Unclaimed",
+        "value_usd": 166.6666666666656
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LBS Blockchain Unclaimed",
+        "value_usd": 166.6666666666663
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Michigan Blockchain Unclaimed",
+        "value_usd": 166.66666666666606
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 5666.666666666665
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "TokenLogic Unclaimed",
+        "value_usd": 23718.49537037036
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -221761
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Incentives",
+        "line_item": "ALC GHO liquidity payment",
+        "value_usd": -58269
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -464940.9395293377
+      },
+      {
+        "block_period": {
+          "value": "2024-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 128786.13552143387
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 27510.273972602874
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Grants DAO Unclaimed",
+        "value_usd": 572943.98608119
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Arana Unclaimed",
+        "value_usd": 1108.611111111108
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Areta Unclaimed",
+        "value_usd": 5373.912037037035
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Bored Ghosts Developing Unclaimed",
+        "value_usd": 236872.09876543228
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 419806.0699588479
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 5178.020334963992
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 4666.666666666664
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 7994.6913580247
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LlamaRisk Unclaimed",
+        "value_usd": 58172.22222222228
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Saucy Block Unclaimed",
+        "value_usd": 2493.055555555554
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 846.9212962962954
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "TokenLogic Unclaimed",
+        "value_usd": 1008.2175925925812
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -294180
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Incentives",
+        "line_item": "ALC GHO liquidity payment",
+        "value_usd": -143742
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -798739.8715659834
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 606942.2106435482
+      },
+      {
+        "block_period": {
+          "value": "2024-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 8162.468145347999
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 5487.062404870732
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Grants DAO Unclaimed",
+        "value_usd": 677908.57308119
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 5918493.150684933
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave v3 Bug Bounties Unclaimed",
+        "value_usd": 1100
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Areta Unclaimed",
+        "value_usd": 2999.999999999997
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Bored Ghosts Developing Unclaimed",
+        "value_usd": 204234.07407407448
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 708694.9588477368
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 151279.44144173444
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 2999.9999999999973
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 32134.06635802475
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LlamaRisk Unclaimed",
+        "value_usd": 66208.50000000015
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Saucy Block Unclaimed",
+        "value_usd": 592.8009259259234
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 3166.6666666666647
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "TokenLogic Unclaimed",
+        "value_usd": 35355.439814814854
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -710759
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -5886
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Incentives",
+        "line_item": "ALC GHO liquidity payment",
+        "value_usd": -15000
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -1088902.2803831128
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 1740349.4063455374
+      },
+      {
+        "block_period": {
+          "value": "2024-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 13738.394327618
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 16170.710806697192
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 3677369.863013699
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Arana Unclaimed",
+        "value_usd": 166.66666666666356
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Areta Unclaimed",
+        "value_usd": 499.9999999999957
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Bored Ghosts Developing Unclaimed",
+        "value_usd": 3555.555555555963
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 244792.16534983568
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 97999.99571935792
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 499.99999999999704
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 10407.600308642099
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LlamaRisk Unclaimed",
+        "value_usd": 4981.379731379973
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Saucy Block Unclaimed",
+        "value_usd": 333.3333333333303
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 666.6666666666636
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "TokenLogic Unclaimed",
+        "value_usd": 3146.897505144131
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -1188327
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -15870
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -1851424.4035583097
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 1796200.8629693831
+      },
+      {
+        "block_period": {
+          "value": "2024-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 32859.865562700004
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 26581.430745814352
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 3948116.438356164
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave v3 Bug Bounties Unclaimed",
+        "value_usd": 68200
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 568642.3377103114
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 88721.8374240763
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Karpatkey Unclaimed",
+        "value_usd": 3360.902134773786
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LlamaRisk Unclaimed",
+        "value_usd": 2894.6886446889694
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -1781053
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -10675
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -2246149.5507351407
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 2957131.8409646815
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 20679.85495988915
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 27737.467584839247
+      },
+      {
+        "block_period": {
+          "value": "2025-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 12206.396397288001
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Chan Initiative Unclaimed",
+        "value_usd": 4823.059360730651
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 4425010.273972602
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave v3 Bug Bounties Unclaimed",
+        "value_usd": 91300
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 24207.717625668745
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 100503.03985938829
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 29640.98282994325
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "LlamaRisk Unclaimed",
+        "value_usd": 3586.6910866914404
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -2182356
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -18614
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -591236.6679788933
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Staking",
+        "line_item": "stkGHO Emissions",
+        "value_usd": -1125679.461589953
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 2241200.066751403
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 220033.8787839879
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 275985.6757241498
+      },
+      {
+        "block_period": {
+          "value": "2025-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 59836.31412486699
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 4424657.534246574
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave v3 Bug Bounties Unclaimed",
+        "value_usd": 105600
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 8769.318456067216
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 81644.21185329999
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 111686.24633848888
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO CEX",
+        "value_usd": -1050000
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -1949205
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -1250
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -2284593.204383252
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 5385691.123270458
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 829856.8511089114
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 169478.82176495832
+      },
+      {
+        "block_period": {
+          "value": "2025-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 18750.578372225
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Chaos Labs Unclaimed",
+        "value_usd": 7578.350615349712
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 19272.570392599548
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 194655.6608061361
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "IgnasDefi Unclaimed",
+        "value_usd": 13538.097302531933
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 2685.376093447661
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO CEX",
+        "value_usd": -142429
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -1356039
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -2327971.769305844
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 1928930.9933195799
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 1309299.0947673407
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 594449.4237947211
+      },
+      {
+        "block_period": {
+          "value": "2025-10-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 9617.270068379
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 4888369.574246574
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Certora Unclaimed",
+        "value_usd": 39169.318456067216
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Ezr3al Unclaimed",
+        "value_usd": 903.5223043617705
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 285269.61695833795
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "IgnasDefi Unclaimed",
+        "value_usd": 403.52230436177433
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "StableLabs Unclaimed",
+        "value_usd": 1070.188971028441
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO CEX",
+        "value_usd": -45475
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -802803
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -2410374.5707937186
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 1160169.7152099316
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 622888.5402098447
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 1121288.4340746056
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 25711.930679657
+      },
+      {
+        "block_period": {
+          "value": "2026-01-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Less: Treasury Borrow Interest",
+        "value_usd": -67259.70412208699
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "Aave Labs Unclaimed",
+        "value_usd": 4938849.574246574
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 344294.2105521643
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -166001
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -847365
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -2173532.2478402527
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 997601.377400738
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 402096.3967398646
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 1286073.1347973081
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 220849.53785885
+      },
+      {
+        "block_period": {
+          "value": "2026-04-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Less: Treasury Borrow Interest",
+        "value_usd": -48294.37638637703
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Holding Statement",
+        "statement_section": "Total Liabilities",
+        "line_category": "GHO",
+        "line_item": "GHO Umbrella Unclaimed Rewards",
+        "value_usd": 223251.98121622895
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO CEX",
+        "value_usd": -123515
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "GHO Liquidity",
+        "value_usd": -6085
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "GHO",
+        "line_item": "sGHO",
+        "value_usd": -962759
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Incentives",
+        "line_item": "ALC GHO liquidity payment",
+        "value_usd": -13129
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Expenses",
+        "line_category": "Insurance",
+        "line_item": "Aave Umbrella",
+        "value_usd": -672551.2488290059
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Borrow Fees",
+        "value_usd": 754070.3352399704
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Facilitator Deposit Yield",
+        "value_usd": 304275.0894715155
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Interest",
+        "value_usd": 565183.818624204
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "GSM Swap Fees",
+        "value_usd": 69304.703293881
+      },
+      {
+        "block_period": {
+          "value": "2026-07-01"
+        },
+        "statement": "Income Statement",
+        "statement_section": "Revenue",
+        "line_category": "GHO Earnings",
+        "line_item": "Less: Treasury Borrow Interest",
+        "value_usd": -39660.52466668654
+      }
+    ]
+  },
+  "markets": {
+    "data": {
+      "markets": [
+        {
+          "name": "AaveV3Ethereum",
+          "address": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+          "chain": {
+            "chainId": 1,
+            "name": "Ethereum"
+          },
+          "reserves": [
+            {
+              "underlyingToken": {
+                "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+                "symbol": "GHO",
+                "decimals": 18
+              },
+              "borrowInfo": {
+                "apy": {
+                  "value": "0.040810774165985112254325631"
+                },
+                "total": {
+                  "amount": {
+                    "value": "111557528.744306532620088404"
+                  },
+                  "usd": "111557528.744306532620088404"
+                },
+                "reserveFactor": {
+                  "value": "1"
+                },
+                "borrowCap": {
+                  "amount": {
+                    "value": "150000000"
+                  }
+                },
+                "utilizationRate": {
+                  "value": "0.825399949537547634507714323"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "AaveV3EthereumLido",
+          "address": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+          "chain": {
+            "chainId": 1,
+            "name": "Ethereum"
+          },
+          "reserves": [
+            {
+              "underlyingToken": {
+                "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+                "symbol": "GHO",
+                "decimals": 18
+              },
+              "borrowInfo": {
+                "apy": {
+                  "value": "0.037376735240640710287827902"
+                },
+                "total": {
+                  "amount": {
+                    "value": "45989901.010037406094865159"
+                  },
+                  "usd": "45989901.010037406094865159"
+                },
+                "reserveFactor": {
+                  "value": "0.10"
+                },
+                "borrowCap": {
+                  "amount": {
+                    "value": "85000000"
+                  }
+                },
+                "utilizationRate": {
+                  "value": "0.86076605530511021754333553"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "AaveV3EthereumHorizon",
+          "address": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+          "chain": {
+            "chainId": 1,
+            "name": "Ethereum"
+          },
+          "reserves": [
+            {
+              "underlyingToken": {
+                "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+                "symbol": "GHO",
+                "decimals": 18
+              },
+              "borrowInfo": {
+                "apy": {
+                  "value": "0.030454533938812881107633482"
+                },
+                "total": {
+                  "amount": {
+                    "value": "32160892.85226214226826602"
+                  },
+                  "usd": "32160892.85226214226826602"
+                },
+                "reserveFactor": {
+                  "value": "0.10"
+                },
+                "borrowCap": {
+                  "amount": {
+                    "value": "50000000"
+                  }
+                },
+                "utilizationRate": {
+                  "value": "0.53625952257432230486717316"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "AaveV3Monad",
+          "address": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+          "chain": {
+            "chainId": 143,
+            "name": "Monad"
+          },
+          "reserves": [
+            {
+              "underlyingToken": {
+                "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+                "symbol": "GHO",
+                "decimals": 18
+              },
+              "borrowInfo": {
+                "apy": {
+                  "value": "0.038769855041003213785047065"
+                },
+                "total": {
+                  "amount": {
+                    "value": "31881841.394033034107648328"
+                  },
+                  "usd": "31881841.394033034107648328"
+                },
+                "reserveFactor": {
+                  "value": "0.10"
+                },
+                "borrowCap": {
+                  "amount": {
+                    "value": "36000000"
+                  }
+                },
+                "utilizationRate": {
+                  "value": "0.874855674372833454952632085"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "sghoVault": {
+        "totalAssets": {
+          "amount": {
+            "value": "161481308.803104290235894011"
+          },
+          "usd": "161481308.803104290235894011"
+        },
+        "targetRate": {
+          "value": "0.045"
+        },
+        "paused": false
+      }
+    }
+  }
+}

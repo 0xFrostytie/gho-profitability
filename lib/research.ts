@@ -1,8 +1,20 @@
 export const observed = '2026-09-05';
 export const sources: Record<
   string,
-  { title: string; url: string; date: string; note: string }
+  {
+    title: string;
+    url: string;
+    date: string;
+    note: string;
+  }
 > = {
+  savingsConvention: {
+    title: 'Aave interface · savings APR to APY',
+    url: 'https://github.com/aave/interface/blob/main/src/utils/utils.ts#L143',
+    date: 'Observed 5 September 2026 · live integration correction',
+    note: 'Savings target rate is APR. The official interface displays APY using monthly compounding: (1 + APR / 12)^12 − 1. At 4.50% APR this is approximately 4.59% APY.',
+  },
+
   financials: {
     title: 'TokenLogic · GHO Financials',
     url: 'https://aave.tokenlogic.xyz/gho/financials',
@@ -43,7 +55,7 @@ export const sources: Record<
     title: 'Aave · Markets / GHO Savings',
     url: 'https://app.aave.com/markets/',
     date: 'Live view, observed 2026-09-05',
-    note: 'Official savings banner reports deposits and APY. Different sampling times can produce differing dashboard balances.',
+    note: 'Official savings banner reports deposits; configured target rate is APR, converted to display APY using the interface convention. Different sampling times can produce differing dashboard balances.',
   },
   gho: {
     title: 'GHO · Official website',
