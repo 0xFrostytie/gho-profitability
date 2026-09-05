@@ -1147,7 +1147,7 @@ footer span {
   font-weight: 500;
   color: #becacb;
 }
-.feed-status > span:last-of-type {
+.feed-status > .feed-observation {
   width: 100%;
   text-align: right;
 }
@@ -1407,7 +1407,7 @@ footer span {
   .feed-status {
     justify-content: flex-start;
   }
-  .feed-status > span:last-of-type,
+  .feed-status > .feed-observation,
   .feed-status p {
     text-align: left;
   }

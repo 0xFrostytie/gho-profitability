@@ -67,10 +67,12 @@ function Status({
             ? 'Source connected'
             : status === 'stale'
               ? 'Last available data'
-              : 'Source unavailable'}
+              : connectionError
+                ? 'Data connection unavailable'
+                : 'Source unavailable'}
       </strong>
       {feed?.fetchedAt && (
-        <span>
+        <span className="feed-observation">
           Fetched{' '}
           <time dateTime={feed.fetchedAt}>{dateTime(feed.fetchedAt)}</time>
         </span>
@@ -234,7 +236,7 @@ export function LiveDashboard() {
         if (mounted) {
           setData((previous) => retainAfterFailure(previous));
           setError(
-            'Refresh failed. Any values below are from the last successful fetch; missing values have not been replaced with zero.',
+            'Could not reach the live-data service. Check your connection and try Refresh data. Any retained values keep their original timestamps.',
           );
         }
       } finally {
@@ -315,7 +317,13 @@ export function LiveDashboard() {
             </p>
           </div>
         ) : !financial ? (
-          <Empty message="Financial metrics are unavailable. The site will retry automatically; a previous research figure is not being presented as live." />
+          <Empty
+            message={
+              error
+                ? 'The site’s data connection is unavailable. Current financial metrics could not be checked.'
+                : 'Financial metrics are unavailable. The site will retry automatically; a previous research figure is not being presented as live.'
+            }
+          />
         ) : (
           <>
             <p className="live-source-line">
@@ -402,7 +410,13 @@ export function LiveDashboard() {
         {!data && !error ? (
           <Skeleton className="h-64 w-full" />
         ) : !market ? (
-          <Empty message="Aave’s market data and the on-chain fallback are unavailable. Current rates are unknown until a source responds." />
+          <Empty
+            message={
+              error
+                ? 'The site’s data connection is unavailable. Aave’s current rates could not be checked.'
+                : 'Aave’s market data and the on-chain fallback are unavailable. Current rates are unknown until a source responds.'
+            }
+          />
         ) : (
           <>
             <p className="live-source-line">
@@ -533,7 +547,13 @@ export function LiveDashboard() {
         {!data && !error ? (
           <Skeleton className="h-64 w-full" />
         ) : !quarters ? (
-          <Empty message="Quarterly statements could not be fetched. The dated audit remains available below; it has not been relabeled as current data." />
+          <Empty
+            message={
+              error
+                ? 'The site’s data connection is unavailable. Quarterly statements could not be checked.'
+                : 'Quarterly statements could not be fetched. The dated audit remains available below; it has not been relabeled as current data.'
+            }
+          />
         ) : (
           <>
             <p className="live-source-line">

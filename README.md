@@ -51,7 +51,7 @@ node --test scripts/*.test.mjs
 pnpm build
 ```
 
-Lint checks project-authored code; the unmodified starter UI catalog and its generated mobile hook are excluded from lint because the scaffold has baseline lint errors. TypeScript checks include those dependencies. No browser visual QA was requested or performed.
+Lint checks project-authored code; the unmodified starter UI catalog and its generated mobile hook are excluded from lint because the scaffold has baseline lint errors. TypeScript checks include those dependencies. After the user requested an end-to-end check, the published page was verified in the browser for live source loading and manual refresh, alongside API, production Worker and automated lifecycle checks.
 
 The hosting configuration is `.openai/hosting.json`. Sites owns production hosting. Credentials are supplied transiently during publishing and are never stored in this repository.
 
